@@ -50,7 +50,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -132,11 +132,9 @@ body {
 }
 .button-item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 20px;
 }
 .button-list {
   display: flex;
-  padding-top: 94px;
 }
 .button-list-item:active,
 .button-list-item:hover,
@@ -212,9 +210,13 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.features {
+.section-features {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.features {
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .first-main-list {
   justify-content: center;
@@ -237,6 +239,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--textcolor-link-button);
+  padding-bottom: 10px;
 }
 .first-main-list-paragraph {
   font-family: "Roboto", sans-serif;
@@ -250,6 +253,7 @@ body {
 }
 .about-sec {
   background: #f5f4fa;
+  padding-top: 94px;
 }
 .about {
   padding-bottom: 94px;
@@ -274,7 +278,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--textcolor-link-button);
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .second-main-list-item {
@@ -314,7 +317,9 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.footer {
+/* .footer {
+} */
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -326,6 +331,9 @@ body {
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
+}
+.footer-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-contact-mail {
   font-family: "Roboto", sans-serif;
@@ -354,18 +362,22 @@ body {
   padding-right: 24px;
   border: 1px solid #eeeeee;
 }
+.main-section {
+  padding-top: 94px;
+  padding-bottom: 64px;
+}
 .img-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+  padding-top: 30px;
 }
 .img-list-item {
   width: 370px;
   height: 404px;
-  margin-top: 30px;
 }
 .img-list-item:not(:nth-child(3n)) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .img-list-subtitle {
   font-family: "Roboto", sans-serif;
@@ -409,4 +421,5 @@ body {
 .main-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
